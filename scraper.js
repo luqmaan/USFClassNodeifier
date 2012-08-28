@@ -4,7 +4,8 @@ var querystring = require('querystring'),
 	http = require('http'),
 	jsdom = require('jsdom'),
 	fs = require('fs');
-	jquerySource = fs.readFileSync("./jquery.js").toString();
+	jquerySource = fs.readFileSync("./jquery.js").toString(),
+	logger  = require('./log');
 
 exports.update = function(options, callback) {
 
@@ -46,7 +47,7 @@ exports.update = function(options, callback) {
 			}
 		};
 
-		console.log("Making request...");
+		logger.log("Making request...");
 
 		var post_req = http.request(post_options, function(res) {
 			res.setEncoding('utf8');
@@ -54,7 +55,7 @@ exports.update = function(options, callback) {
 				html += chunk;
 			});
 			res.on('end', function() {
-				console.log("Request completed...");
+				logger.log("Request ended...");
 				return parse(html, callback);
 			});
 		});
@@ -67,7 +68,7 @@ exports.update = function(options, callback) {
 
 var parse = function(usfHTML, callback) {
 
-	console.log("Parsing results");
+	logger.log("Parsing results...");
 	
 	// prepare results array
 	var results = [];
@@ -80,7 +81,7 @@ var parse = function(usfHTML, callback) {
 			var $ = window.$;
 
 			// find the number of seats and crn
-			$("table td").each(function() {
+			$("table[border=1] tr").not("[align='LEFT']").each(function() {
 
 				var usfClass = {
 					crn : $(this).find(":nth-child(4)").text(),
@@ -88,12 +89,12 @@ var parse = function(usfHTML, callback) {
 					title : $(this).find(":nth-child(8)").text(),
 					status : $(this).find(":nth-child(11)").text(),
 					seats : $(this).find(":nth-child(13)").text(),
-					days : $(this).find(":nth-child(17)").text(),
-					time : $(this).find(":nth-child(18)").text(),
-					instructor : $(this).find(":nth-child(21)").text()
+					days : $(this).find(":nth-child(16)").text(),
+					time : $(this).find(":nth-child(17)").text(),
+					instructor : $(this).find(":nth-child(20)").text()
 				};
 
-				// console.log(usfClass.seats + " " + usfClass.crn);
+				logger.log("Found class " + usfClass.crn);
 				
 				// add to results
 				results.push(usfClass);
