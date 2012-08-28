@@ -46,12 +46,15 @@ exports.update = function(options, callback) {
 			}
 		};
 
+		console.log("Making request...");
+
 		var post_req = http.request(post_options, function(res) {
 			res.setEncoding('utf8');
 			res.on('data', function(chunk) {
 				html += chunk;
 			});
 			res.on('end', function() {
+				console.log("Request completed...");
 				return parse(html, callback);
 			});
 		});
@@ -64,6 +67,8 @@ exports.update = function(options, callback) {
 
 var parse = function(usfHTML, callback) {
 
+	console.log("Parsing results");
+	
 	// prepare results array
 	var results = [];
 
@@ -76,7 +81,6 @@ var parse = function(usfHTML, callback) {
 
 			// find the number of seats and crn
 			$("table td").each(function() {
-
 
 				var usfClass = {
 					crn : $(this).find(":nth-child(4)").text(),
