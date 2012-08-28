@@ -1,0 +1,253 @@
+{
+  "startedDateTime": "2012-08-28T13:05:13.847Z",
+  "time": 433,
+  "request": {
+    "method": "POST",
+    "url": "https://usfonline.admin.usf.edu/pls/prodss/wp_staff_search_db",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Origin",
+        "value": "http://www.registrar.usf.edu"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip,deflate,sdch"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "en-US,en;q=0.8"
+      },
+      {
+        "name": "Cookie",
+        "value": "optimizelyEndUserId=oeu1342457021059r0.9229912522714585; optimizelyBuckets=%7B%7D; mp_1f034f7ee269d69da98f9cb2cceee157_mixpanel=%7B%22distinct_id%22%3A%20%2224594ba60464fc3b1bc05ebf477b7fb26a7ecbfa%22%2C%22mp_name_tag%22%3A%20%22zid%3A733268%22%2C%22isActivated%22%3A%20%221%22%2C%22gender%22%3A%20%22unknown%22%2C%22zid%22%3A%20%22733268%22%2C%22zipCode%22%3A%20%2233620%22%2C%22metroRegion%22%3A%20%22tampa%20bay%20area%22%2C%22isInFBCanvas%22%3A%20%220%22%2C%22utm_source%22%3A%20%22email%22%2C%22utm_medium%22%3A%20%22app%22%2C%22utm_campaign%22%3A%20%22rsp-ancmnt%22%2C%22utm_content%22%3A%20%22hdr_signup%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22%24search_engine%22%3A%20%22google%22%7D; accessibility=false; __utma=118619277.673025591.1323465868.1346020577.1346158873.18; __utmb=118619277.1.10.1346158873; __utmc=118619277; __utmz=118619277.1346158873.18.11.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Content-Length",
+        "value": "204"
+      },
+      {
+        "name": "Accept-Charset",
+        "value": "ISO-8859-1,utf-8;q=0.7,*;q=0.3"
+      },
+      {
+        "name": "Host",
+        "value": "usfonline.admin.usf.edu"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.82 Safari/537.1"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "name": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "max-age=0"
+      },
+      {
+        "name": "Referer",
+        "value": "http://www.registrar.usf.edu/ssearch/staff/staff.php"
+      }
+    ],
+    "queryString": [],
+    "cookies": [
+      {
+        "name": "optimizelyEndUserId",
+        "value": "oeu1342457021059r0.9229912522714585",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "optimizelyBuckets",
+        "value": "%7B%7D",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "mp_1f034f7ee269d69da98f9cb2cceee157_mixpanel",
+        "value": "%7B%22distinct_id%22%3A%20%2224594ba60464fc3b1bc05ebf477b7fb26a7ecbfa%22%2C%22mp_name_tag%22%3A%20%22zid%3A733268%22%2C%22isActivated%22%3A%20%221%22%2C%22gender%22%3A%20%22unknown%22%2C%22zid%22%3A%20%22733268%22%2C%22zipCode%22%3A%20%2233620%22%2C%22metroRegion%22%3A%20%22tampa%20bay%20area%22%2C%22isInFBCanvas%22%3A%20%220%22%2C%22utm_source%22%3A%20%22email%22%2C%22utm_medium%22%3A%20%22app%22%2C%22utm_campaign%22%3A%20%22rsp-ancmnt%22%2C%22utm_content%22%3A%20%22hdr_signup%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22%24search_engine%22%3A%20%22google%22%7D",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "accessibility",
+        "value": "false",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "__utma",
+        "value": "118619277.673025591.1323465868.1346020577.1346158873.18",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "__utmb",
+        "value": "118619277.1.10.1346158873",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "__utmc",
+        "value": "118619277",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      },
+      {
+        "name": "__utmz",
+        "value": "118619277.1346158873.18.11.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)",
+        "expires": null,
+        "httpOnly": false,
+        "secure": false
+      }
+    ],
+    "headersSize": 1638,
+    "bodySize": 204,
+    "postData": {
+      "mimeType": "application/x-www-form-urlencoded",
+      "text": "P_SEMESTER=201208&P_SESSION=&P_CAMPUS=T&P_DIST=&P_COL=&P_DEPT=&p_status=O&p_ssts_code=&P_CRSE_LEVL=&P_REF=&P_SUBJ=CDA&P_NUM=3201&P_TITLE=Lab&P_CR=&p_day_x=no_val&p_day=no_val&P_TIME1=&P_INSTRUCTOR=&P_UGR=",
+      "params": [
+        {
+          "name": "P_SEMESTER",
+          "value": "201208"
+        },
+        {
+          "name": "P_SESSION",
+          "value": ""
+        },
+        {
+          "name": "P_CAMPUS",
+          "value": "T"
+        },
+        {
+          "name": "P_DIST",
+          "value": ""
+        },
+        {
+          "name": "P_COL",
+          "value": ""
+        },
+        {
+          "name": "P_DEPT",
+          "value": ""
+        },
+        {
+          "name": "p_status",
+          "value": "C"
+        },
+        {
+          "name": "p_ssts_code",
+          "value": ""
+        },
+        {
+          "name": "P_CRSE_LEVL",
+          "value": ""
+        },
+        {
+          "name": "P_REF",
+          "value": ""
+        },
+        {
+          "name": "P_SUBJ",
+          "value": "CDA"
+        },
+        {
+          "name": "P_NUM",
+          "value": "3201"
+        },
+        {
+          "name": "P_TITLE",
+          "value": "Lab"
+        },
+        {
+          "name": "P_CR",
+          "value": ""
+        },
+        {
+          "name": "p_day_x",
+          "value": "no_val"
+        },
+        {
+          "name": "p_day",
+          "value": "no_val"
+        },
+        {
+          "name": "P_TIME1",
+          "value": ""
+        },
+        {
+          "name": "P_INSTRUCTOR",
+          "value": ""
+        },
+        {
+          "name": "P_UGR",
+          "value": ""
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "httpVersion": "HTTP/1.1",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Tue, 28 Aug 2012 13:05:14 GMT"
+      },
+      {
+        "name": "Connection",
+        "value": "close"
+      },
+      {
+        "name": "Content-Length",
+        "value": "7170"
+      },
+      {
+        "name": "Server",
+        "value": "Oracle-Application-Server-10g/10.1.2.0.2 Oracle-HTTP-Server"
+      },
+      {
+        "name": "Content-Type",
+        "value": "text/html; charset=UTF-8"
+      }
+    ],
+    "cookies": [],
+    "content": {
+      "size": 7170,
+      "mimeType": "text/html",
+      "compression": -86
+    },
+    "redirectURL": "",
+    "headersSize": 206,
+    "bodySize": 7256
+  },
+  "cache": {},
+  "timings": {
+    "blocked": 0,
+    "dns": -1,
+    "connect": -1,
+    "send": 0,
+    "wait": 322,
+    "receive": 109,
+    "ssl": -1
+  },
+  "pageref": "page_1"
+}
