@@ -22,11 +22,11 @@
     //"server"
   ],
   "dependencies" : {
-    "colors"   :  "*",
-    "flatiron" :  "0.1.x",
-    "optimist" :  "0.2.x",
-    "union"    :  "0.1.x",
-    "ecstatic" :  "0.1.x"
+    "cron"     :  "1.0.0",
+    "express"    :  "3.0.*",
+    "jsdom" :  "0.2.15",
+    "timezone" :  "0.0.15",
+    "twilio" :  "0.4.0"
   },
   "noAnalyze": true,
   "devDependencies": {
