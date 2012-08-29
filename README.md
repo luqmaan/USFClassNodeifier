@@ -4,5 +4,6 @@ Set up keys.js like this
 		sid: '***',
 		auth_token: '***',
 		host: '***',
-		myphone: '+1***' // where messages will be sent to
+		myphone: '+1***', // where messages will be sent to
+		phone: '' // twilio phone
 	};
