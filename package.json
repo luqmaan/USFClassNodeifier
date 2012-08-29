@@ -1,0 +1,42 @@
+{
+  "name": "usf-class-nodeifier",
+  "preferGlobal": "true",
+  "version": "0.3.0",
+  "author": "Createch",
+  "description": "a Node.js scraper with Twilio notifications",
+  "bin": {
+   // "http-server": "./bin/http-server"
+  },
+  "scripts": {
+    "start": "node ./app.js",
+    // "test": "vows --spec --isolate"
+  },
+  "main": "./controller.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/createch/USFClassNodeifier.git"
+  },
+  "keywords": [
+    //"cli",
+    //"http",
+    //"server"
+  ],
+  "dependencies" : {
+    "colors"   :  "*",
+    "flatiron" :  "0.1.x",
+    "optimist" :  "0.2.x",
+    "union"    :  "0.1.x",
+    "ecstatic" :  "0.1.x"
+  },
+  "noAnalyze": true,
+  "devDependencies": {
+    //"vows"    :  "0.5.x",
+    //"request" :  "2.1.x"
+  },
+  "bundleDependencies": [
+  ],
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.6"
+  }
+}
