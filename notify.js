@@ -8,7 +8,7 @@ var express			= require('express'),
 						keys.twilio.sid,
 						keys.twilio.auth_token,
 						keys.twilio.host),
-	phone			= client.getPhoneNumber('+18134341117'),
+	phone			= client.getPhoneNumber(keys.twilio.phone),
 	logger			= require('./log');
 
 exports.send = function(usfClass) {
