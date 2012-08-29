@@ -1,0 +1,6 @@
+.DS_store
+evil*
+node_modules
+*.sublime*
+keys.js
+log.txt
