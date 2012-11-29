@@ -41,6 +41,23 @@ function checkSeats() {
 				"crn":				"", // just here as an example, defaults to any crn
 				"semester":			"" // just here as an example, defaults to fall 2012
 			}, function(results) {
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
+				console.log ("IHEWOIFJWEOIFJWOEIJF");
 				var numNotifications = 0;
 				// figure out if the user should be notified
 				for (var i in results) {

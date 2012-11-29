@@ -2,14 +2,16 @@ console.log("hai from scraper.js");
 
 var fs				= require('fs'),
 	http			= require('http'),
+	https           = require('https'),
 	jsdom			= require('jsdom'),
 	querystring		= require('querystring'),
-	jquerySource	= fs.readFileSync("./jquery.js").toString(), logger = require('./log');
+	jquerySource	= fs.readFileSync("./jquery.js").toString(),
+	logger          = require('./log');
 
 exports.update = function(opts, callback) {
 
 	var post_domain	= 'usfonline.admin.usf.edu';
-	var post_port	= 80;
+	var post_port	= 443;
 	var post_path	= '/pls/prodss/wp_staff_search_db';
 
 	// defaults
@@ -87,7 +89,7 @@ exports.update = function(opts, callback) {
 	// make the request
 	logger.log("Making request...");
 	var html = "";
-	var post_req = http.request(post_options, function(res) {
+	var post_req = https.request(post_options, function(res) {
 		res.setEncoding('utf8');
 		// as data is received, save it to the html
 		res.on('data', function(chunk) {
