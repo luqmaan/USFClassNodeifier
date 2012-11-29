@@ -116,6 +116,7 @@ var parse = function(usfHTML, callback) {
 		// prepare results array
 		var results = [];
 
+
 		// set up the html with jsdom
 		// so we can just use easy jquery selector's to find the data
 		jsdom.env({
@@ -139,6 +140,7 @@ var parse = function(usfHTML, callback) {
 					};
 
 					logger.log("Found class " + usfClass.crn);
+					console.log (usfClass);
 
 					// add to results
 					results.push(usfClass);
